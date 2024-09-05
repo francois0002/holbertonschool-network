@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Configure an Ubuntu server with specific network settings
+
+# Backup the original /etc/hosts file
+cp /etc/hosts /etc/hosts.bak
+
+# Add a new line to the /etc/hosts file
+echo "127.0.0.2 localhost" >> /etc/hosts
+
+# Add a new line to the /etc/hosts file
+echo "8.8.8.8 facebook.com" >> /etc/hosts
